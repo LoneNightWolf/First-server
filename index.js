@@ -56,7 +56,7 @@ server.post('/', function(request, response){
     response.render('results.ejs', { data: groups})
 })
 
-var port = 8080
+var port = process.env.PORT
 
 server.listen(port, () => {
     console.log('Server running on port: '+port)
